@@ -4,7 +4,7 @@
       function display(){
       var text = document.getElementById("code").value;
       text += "<b> - "+document.getElementById("name").value + "</b>";
-      text = text.replace(/\./g,' STOP<br>\n').replace(/\?/g,' QUERY<br>\n').replace(/\!/gi,' EXCLAMATION<br>\n')
+      text = text.replace(/\./g,' STOP<br>\n').replace(/\?/g,' QUERY<br>\n').replace(/\!/gi,' EXCLAMATION<br>\n').replace(/\,/g,' PAUSE     \n')
       document.getElementById("output").innerHTML = text;
       
       
