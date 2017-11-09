@@ -1,3 +1,5 @@
 # morsecode
 Morse Code Stuff
-Morse code and telegram converter
+Morse code and telegram converter<br>
+<a href="https://captain-slime.github.io/morsecode/morse.html">Link to Morse code.<br></a>
+<a href="https://captain-slime.github.io/morsecode/telegram.html">Link to Telegram</a>
