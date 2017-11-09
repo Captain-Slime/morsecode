@@ -3,7 +3,7 @@
     <script>
       function display(){
       var text = document.getElementById("code").value;
-      text += "<br> - "+document.getElementById("name").value;
+      text += "<b> - "+document.getElementById("name").value + "</b>";
       text = text.replace(/\./g,' STOP<br>\n').replace(/\?/g,' QUERY<br>\n').replace(/\!/gi,' EXCLAMATION<br>\n')
       document.getElementById("output").innerHTML = text;
       
