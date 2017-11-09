@@ -1,14 +1,22 @@
 <html>
   <head>
     <script>
+      function display(){
+      var text = document.getElementById("code").value;
+      text = text.replace(/\./g,' STOP\n').replace(/\?/g,' QUERY\n')
+      document.getElementById("output").innerHTML = text;
       
+      
+      }
       
     </script>
     
   </head>
   <body>
     Input text here:<br>
-    <input type="text">
+    <input type="text" id="code"> <button onclick="display()"></button><br>
+    <div id="output">
+    </div>
     
     
   </body>
