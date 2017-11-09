@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script>
+      function display(){
+      var text = document.getElementById("code").value;
+      text = text.replace(/\./g,' STOP<br>\n').replace(/\?/g,' QUERY<br>\n').replace(/a/gi,' .-\n').replace(/b/gi,' -...\n').replace(/c/gi,' -.-.\n').replace(/d/gi,' -..\n').replace(/e/gi,' .\n').replace(/f/gi,' ..-.\n').replace(/g/gi,' --.\n').replace(/h/gi,' ....\n').replace(/i/gi,' ..\n').replace(/j/gi,' .---\n').replace(/k/gi,' -.-\n').replace(/l/gi,' .-..\n').replace(/m/gi,' --\n').replace(/n/gi,' -.\n').replace(/o/gi,' ---\n').replace(/p/gi,' .--\n').replace(/q/gi,' --.-\n').replace(/r/gi,' .-.\n').replace(/s/gi,' ...\n').replace(/t/gi,' -\n').replace(/u/gi,' ..-\n').replace(/v/gi,' ...-\n').replace(/w/gi,' .--\n').replace(/x/gi,' -..-\n').replace(/y/gi,' -.--\n').replace(/z/gi,' --..\n')
+      document.getElementById("output").innerHTML = text;
+      
+      
+      }
+      
+    </script>
+    
+  </head>
+  <body>
+    Input text here:<br>
+    <input type="text" id="code"> <button onclick="display()">DO IT!</button><br>
+    <div id="output">
+    </div>
+    
+    
+  </body>
+</html>
