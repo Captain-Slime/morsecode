@@ -1,3 +1,3 @@
 # morsecode
 Morse Code Stuff
-This is a simple morse code converter
+Morse code and telegram converter
