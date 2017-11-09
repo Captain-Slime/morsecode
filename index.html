@@ -3,7 +3,9 @@
     <script>
       function display(){
       var text = document.getElementById("code").value;
-      text = text.replace(/\./g,' STOP\n').replace(/\?/g,' QUERY\n')
+      text = text.replace(/\./g,' STOP
+                          \n').replace(/\?/g,' QUERY
+                                                   \n')
       document.getElementById("output").innerHTML = text;
       
       
@@ -14,7 +16,7 @@
   </head>
   <body>
     Input text here:<br>
-    <input type="text" id="code"> <button onclick="display()"></button><br>
+    <input type="text" id="code"> <button onclick="display()">DO IT!</button><br>
     <div id="output">
     </div>
     
