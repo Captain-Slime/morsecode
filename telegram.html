@@ -3,6 +3,7 @@
     <script>
       function display(){
       var text = document.getElementById("code").value;
+      text += "<br> - "+document.getElementById("name").value;
       text = text.replace(/\./g,' STOP<br>\n').replace(/\?/g,' QUERY<br>\n').replace(/\!/gi,' EXCLAMATION<br>\n')
       document.getElementById("output").innerHTML = text;
       
@@ -14,7 +15,9 @@
   </head>
   <body>
     Input text here:<br>
-    <input type="text" id="code"> <button onclick="display()">DO IT!</button><br>
+    <input type="text" id="code"><br> Optioinal name signiture
+    <input type="text" id="name">
+    <button onclick="display()">DO IT!</button><br>
     <div id="output">
     </div>
     
